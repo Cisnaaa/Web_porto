@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chrisnaya Herlambang — Portfolio</title>
+<meta name="description" content="Portfolio Chrisnaya Herlambang, Mahasiswa Teknik Informatika. Web Development, Problem Solving, Programming." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="nav" id="navbar">
+  <div class="container nav-inner">
+    <a href="#about" class="logo">CHRIS<span>.</span></a>
+    <nav class="menu" id="menu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact" class="btn btn-small">Contact</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Buka menu">☰</button>
+  </div>
+</header>
+
+<main>
+<!-- About Me -->
+<section id="about" class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <p class="badge">👋 Halo, saya</p>
+      <h1>Chrisnaya Herlambang</h1>
+      <p class="subtitle">NIM 26051204096 &nbsp;•&nbsp; Teknik Informatika</p>
+      <p class="desc">
+        Mahasiswa Teknik Informatika yang tertarik pada <strong>Cyber Security </strong> dan
+        <strong>Problem Solving</strong>. Fokus pada pembangunan aplikasi web yang bersih,
+        cepat, dan mudah digunakan dengan disiplin ilmu rekayasa perangkat lunak.
+      </p>
+      <div class="cta-row">
+        <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
+        <a href="Assets/CV_ChrisnayaHerlambang.pdf" class="btn btn-ghost">⬇ Unduh CV</a>
+      </div>
+
+      <div class="education">
+        <h3>Riwayat Pendidikan</h3>
+        <ul class="timeline-mini">
+          <li><span>2026 — Sekarang</span><strong>Universitas Negeri Surabaya — S1 Teknik Informatika</strong></li>
+          <li><span>2023 — 2026</span><strong>SMKN 2 SURABAYA — TKJ</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <div class="photo-card">
+        <div class="photo-placeholder"><img src="assets/83478-removebg-preview.png" alt="Foto formal" /></div>
+        
+        <div class="photo-info">
+          <strong>CHRISNAYA HERLAMBANG</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  What Can I Do-->
+<section id="skills" class="section">
+  <div class="container">
+    <p class="section-tag">What Can I Do</p>
+    <h2>Skills & Tools</h2>
+    <div class="skills-grid">
+      <div class="card">
+        <h3>💡 Skills</h3>
+        <div class="skill">
+          <div class="skill-head"><span>Web Development (HTML/CSS/JS)</span><span>60%</span></div>
+          <div class="bar"><div class="fill" style="--w:60%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>Programming (Python / C++)</span><span>70%</span></div>
+          <div class="bar"><div class="fill" style="--w:70%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>Problem Solving</span><span>75%</span></div>
+          <div class="bar"><div class="fill" style="--w:75%"></div></div>
+        </div>
+        <div class="tags">
+          <span>Responsive Design</span><span>UI Dasar</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>🛠 Tools</h3>
+        <div class="tools-grid">
+          <div class="tool"><span class="tool-icon">🌿</span><strong>Git</strong><small>Version Control</small></div>
+          <div class="tool"><span class="tool-icon">💻</span><strong>VS Code</strong><small>Editor</small></div>
+          <div class="tool"><span class="tool-icon">🐧</span><strong>Linux</strong><small>OS & Terminal</small></div>
+          <div class="tool"><span class="tool-icon">🛜</span><strong>Cisco Packet Tracer</strong><small>Networking</small></div>
+          <div class="tool"><span class="tool-icon">🐙</span><strong>GitHub</strong><small>Collaboration</small></div>
+          <div class="tool"><span class="tool-icon"><></span><strong>C++</strong><small>Program</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Achievement -->
+<section id="achievements" class="section alt">
+  <div class="container">
+    <p class="section-tag">Achievements</p>
+    <h2>Pencapaian</h2>
+    <div class="ach-grid">
+      <article class="card ach">
+        <span class="ach-year">2025 • Miktrotik</span>
+        <h3>Sertifikasi MTCNA</h3>  
+        <p> Sertifikasi keahlian bidang networking MikroTik Certified Network Associate oleh MikroTik.</p>
+        <button class="link-btn" data-modal="modal1">Lihat Bukti / Sertifikat →</button>
+      </article>
+      <article class="card ach">
+        <span class="ach-year">2025 • Universitas Surabaya</span>
+        <h3>FOTEC – LTA (Line Tracer Analog)</h3>
+        <p>Melakukan problem solving pada robot dan menjadi operator robot saat lomba.</p>
+        <button class="link-btn" data-modal="modal2">Lihat Bukti / Sertifikat →</button>
+      </article>
+      <article class="card ach">
+        <span class="ach-year">2024 • PENS (Politeknik Elektronika Negeri Surabaya)</span>
+        <h3>IONIC - Networking</h3>
+        <p>Menyelesaikan project Superlab pada lomba bidang networking dengan software Cisco Packet Tracer.</p>
+        <button class="link-btn" data-modal="modal3">Lihat Bukti / Sertifikat →</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!--Contact-->
+<section id="contact" class="section contact">
+  <div class="container contact-inner">
+    <p class="section-tag">Contact</p>
+    <h2>Mari Terhubung & Berkolaborasi</h2>
+    <div class="contact-cards">
+      <a class="card contact-card" href="mailto:26051204096@mhs.unesa.ac.id">✉️<strong>Email</strong><small>26051204096@mhs.unesa.ac.id</small></a>
+      <a class="card contact-card" href="https://github.com/Cisnaaa" target="_blank" rel="noopener">🐙<strong>GitHub</strong><small>github.com/Cisnaaa</small></a>
+      <a class="card contact-card" href="https://www.linkedin.com/in/chrisnaya-herlambang-039368441?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">💼<strong>LinkedIn</strong><small>Chrisnaya Herlambang</small></a>
+    </div>
+    <a href="Assets/CV_ChrisnayaHerlambang.pdf" class="btn btn-primary btn-big">⬇ Unduh CV / Resume (PDF)</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <p>© 2026 Chrisnaya Herlambang. Dibuat dengan teliti.</p>
+  </div>
+</footer>
+
+<!--Bukti Sertif-->
+<div class="modal" id="modal1" aria-hidden="true">
+  <div class="modal-box">
+    <button class="modal-close" data-close>✕</button>
+    <h3>Sertifikasi MTCNA</h3>
+    <p class="muted">2025 • Miktrotik</p>
+    <div class="cert-placeholder">Pratinjau Sertifikat (PDF / Gambar)</div>
+    <a href="Assets/Sertifikat_MTCNA.pdf" class="btn btn-small btn-primary">Buka File Asli</a>
+  </div>
+</div>
+<div class="modal" id="modal2" aria-hidden="true">
+  <div class="modal-box">
+    <button class="modal-close" data-close>✕</button>
+    <h3>FOTEC – LTA (Line Tracer Analog)</h3>
+    <p class="muted">2025 • Universitas Surabaya</p>
+    <div class="cert-placeholder">Pratinjau Sertifikat (PDF / Gambar)</div>
+    <a href="Assets/ChrisnayaHerlambang_FOTECV2.pdf" class="btn btn-small btn-primary">Buka File Asli</a>
+  </div>
+</div>
+<div class="modal" id="modal3" aria-hidden="true">
+  <div class="modal-box">
+    <button class="modal-close" data-close>✕</button>
+    <h3>IONIC - Networking</h3>
+    <p class="muted">2024 • PENS (Politeknik Elektronika Negeri Surabaya)</p>
+    <div class="cert-placeholder">Pratinjau SK / Sertifikat</div>
+    <a href="Assets/ChrisnayaHerlambang_IONIC.pdf" class="btn btn-small btn-primary">Buka File Asli</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

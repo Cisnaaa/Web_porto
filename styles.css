@@ -1,0 +1,106 @@
+:root{
+  --bg:#0b1220; --bg2:#0f172a; --card:#131f35; --line:#22314f;
+  --text:#e8eef7; --muted:#9fb0c8; --accent:#2dd4bf; --accent2:#38bdf8;
+  --radius:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Plus Jakarta Sans','Inter',system-ui,sans-serif;line-height:1.6}
+.container{max-width:1080px;margin:0 auto;padding:0 20px}
+a{color:inherit;text-decoration:none}
+
+/* Navbar */
+.nav{position:sticky;top:0;z-index:50;background:rgba(11,18,32,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;font-size:1.4rem}
+.logo span{color:var(--accent)}
+.menu{display:flex;gap:24px;align-items:center}
+.menu a{color:var(--muted);font-weight:600}
+.menu a:hover{color:var(--text)}
+.hamburger{display:none;background:none;border:0;color:var(--text);font-size:1.5rem;cursor:pointer}
+
+/* Buttons */
+.btn{display:inline-block;padding:12px 22px;border-radius:12px;font-weight:700;border:1px solid transparent;cursor:pointer}
+.btn-small{padding:8px 16px}
+.btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#04222b}
+.btn-ghost{border-color:var(--line);color:var(--text)}
+.btn-big{margin-top:20px}
+.link-btn{background:none;border:0;color:var(--accent);font-weight:700;cursor:pointer;font-size:1rem;padding:0}
+
+/* About Me */
+.hero{padding:72px 0 40px;background:radial-gradient(800px 400px at 80% 0%,rgba(45,212,191,.15),transparent),var(--bg)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.badge{display:inline-block;background:#12233d;border:1px solid var(--line);padding:6px 14px;border-radius:999px;color:var(--accent);font-weight:600;margin-bottom:14px}
+.hero h1{font-size:3rem;line-height:1.1;margin-bottom:6px}
+.subtitle{color:var(--muted);font-weight:600;margin-bottom:14px}
+.desc{color:#c8d4e6;max-width:52ch}
+.desc strong{color:var(--text)}
+.cta-row{display:flex;gap:12px;margin:22px 0;flex-wrap:wrap}
+.education h3{margin:18px 0 10px;font-size:1rem;color:var(--accent)}
+.timeline-mini{list-style:none;display:grid;gap:10px}
+.timeline-mini li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px}
+.timeline-mini span{display:block;font-size:.8rem;color:var(--muted)}
+
+/* Photo */
+.photo-card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;text-align:center}
+.photo-card img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.photo-placeholder{aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:4rem;font-weight:800;color:#04222b;background:linear-gradient(135deg,var(--accent),var(--accent2))}
+.photo-info{padding:18px}
+.photo-info span{display:block;color:var(--muted);font-size:.9rem}
+
+/* Sections */
+.section{padding:64px 0}
+.section.alt{background:var(--bg2)}
+.section-tag{color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem}
+.section h2{font-size:2rem;margin:6px 0 24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.skill{margin:16px 0}
+.skill-head{display:flex;justify-content:space-between;font-weight:600;font-size:.95rem;margin-bottom:8px}
+.bar{background:#0a1325;border-radius:999px;height:10px;overflow:hidden}
+.fill{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:999px;transition:width 1.2s ease}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.tags span{background:#0a1325;border:1px solid var(--line);padding:6px 12px;border-radius:999px;font-size:.85rem;color:var(--muted)}
+.tools-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.tool{background:#0a1325;border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center}
+.tool-icon{font-size:1.5rem}
+.tool strong{display:block;margin-top:6px}
+.tool small{color:var(--muted)}
+
+/* Achievements */
+.ach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.ach-year{font-size:.8rem;color:var(--accent);font-weight:700}
+.ach h3{margin:8px 0}
+.ach p{color:var(--muted);font-size:.95rem;margin-bottom:14px}
+
+/* Contact */
+.contact{background:#f6f9fc;color:#0b1220;text-align:center}
+.contact .section-tag{color:#0d9488}
+.contact-desc{color:#475569}
+.contact-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:26px 0}
+.contact-card{background:#fff;border:1px solid #e2e8f0;font-size:1.4rem}
+.contact-card strong{display:block;font-size:1rem;margin-top:6px}
+.contact-card small{color:#64748b}
+.contact .hint{margin-top:12px;color:#64748b;font-size:.85rem}
+
+/* Footer */
+footer{border-top:1px solid var(--line);padding:20px 0;color:var(--muted);font-size:.9rem;text-align:center;background:var(--bg)}
+
+/* Modal */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;padding:20px;z-index:100}
+.modal.open{display:flex}
+.modal-box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;max-width:480px;width:100%;position:relative}
+.modal-close{position:absolute;top:12px;right:12px;background:none;border:0;color:var(--muted);font-size:1.2rem;cursor:pointer}
+.muted{color:var(--muted);margin-bottom:12px}
+.cert-placeholder{border:2px dashed var(--line);border-radius:12px;padding:40px 20px;text-align:center;color:var(--muted);margin-bottom:16px}
+
+/* Responsive */
+@media(max-width:860px){
+  .hero-grid,.skills-grid{grid-template-columns:1fr}
+  .ach-grid,.contact-cards{grid-template-columns:1fr}
+  .hero h1{font-size:2.2rem}
+  .menu{display:none;position:absolute;top:64px;right:0;left:0;background:var(--bg2);flex-direction:column;padding:20px;border-bottom:1px solid var(--line)}
+  .menu.open{display:flex}
+  .hamburger{display:block}
+  .tools-grid{grid-template-columns:repeat(2,1fr)}
+}
